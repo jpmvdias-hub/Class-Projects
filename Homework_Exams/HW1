@@ -1,0 +1,74 @@
+#Name: Joao Dias
+#Course: CMPSC 131, Section 002
+#File Name: Dias_HW1.py
+#Date: September 4, 2025
+
+#Short Description: Calculate the Tax, Tip Amount
+#and Total of a Restaurant Bill
+
+#Program Description Output
+print("This program will calculate and display the Tax, Tip Amount, and Total of a Bill")
+
+#Adds Bill Variable and Prints out readout of the variable
+Bill=96.56
+print("The Bill is:", "$", Bill)
+
+#Adds percentage variable and uses it to calculate the Tax amount of this bill
+Percantage= 5.5
+Tax= ((Percantage/100)* Bill)
+
+
+#Displays result of the Tax
+print("The Tax for the Bill is:", "$", Tax)
+
+#Adds Both Tax and Bill Together to get Total So Far
+Total_So_Far= Bill + Tax
+
+#Displays Total of Bill and Tax without Tip
+print("This is the total so far without the Tip:", "$", Total_So_Far)
+
+
+#Calculate Final Tip using Tip_Amount
+Percentage_Tip=20
+Final_Tip= ((Percentage_Tip/100)*Total_So_Far)
+
+
+#Displays Tip
+print("The Tip for this meal post tax is:", "$", Final_Tip)
+
+Total= Bill + Tax + Final_Tip
+
+print(" Your final Total is:", "$", Total)
+
+#Final Output for $96.56 Bill Amount
+
+'''
+This program will calculate and display the Tax, Tip Amount, and Total of a Bill
+The Bill is: $ 96.56
+The Tax for the Bill is: $ 5.3108
+This is the total so far without the Tip: $ 101.8708
+The Tip for this meal post tax is: $ 20.374160000000003
+ Your final Total is: $ 122.24496
+ '''
+
+
+#If the Original Bill was $20.50 Dollars, you'd get this output.
+
+'''
+The Bill is: $ 20.5
+The Tax for the Bill is: $ 1.1275
+This is the total so far without the Tip: $ 21.6275
+The Tip for this meal post tax is: $ 4.325500000000001
+Your final Total is: $ 25.953000000000003
+'''
+
+
+#If the Original Bill was $300.89 Dollars, you'd get this output.
+
+'''
+The Bill is: $ 300.89
+The Tax for the Bill is: $ 16.548949999999998
+This is the total so far without the Tip: $ 317.43895
+The Tip for this meal post tax is: $ 63.48779
+Your final Total is: $ 380.92674
+'''
